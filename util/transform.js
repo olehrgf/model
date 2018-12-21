@@ -23,8 +23,8 @@ module.exports.roundify = function (val) {
 };
 
 module.exports.toULLR = function (val) {
-    return JSON.stringify({
+    return {
         type: 'envelope',
         coordinates: [val.upperLeft.lon, val.upperLeft.lat, val.lowerRight.lon, val.lowerRight.lat]
-    });
+    };
 };
