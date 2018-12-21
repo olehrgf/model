@@ -25,6 +25,6 @@ module.exports.roundify = function (val) {
 module.exports.toULLR = function (val) {
     return {
         type: 'envelope',
-        coordinates: [val.upperLeft.lon, val.upperLeft.lat, val.lowerRight.lon, val.lowerRight.lat]
+        coordinates: [[val.upperLeft.lon, val.upperLeft.lat], [val.lowerRight.lon, val.lowerRight.lat]]
     };
 };
